@@ -1,0 +1,14 @@
+.information textarea{
+    padding: 5px;
+    width: 15rem;
+}
+#emergency::before{
+    height: 90px;
+}
+#upload-image{
+    width: 170px;
+    margin: 0px 90px;
+}
+.information input, .information textarea {
+    width: 90%;
+}

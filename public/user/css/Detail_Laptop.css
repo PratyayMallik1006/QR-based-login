@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url('https://images.netdirector.co.uk/gforces-auto/image/upload/w_392,h_392,dpr_2.0,q_auto,c_fill,f_auto,fl_lossy/auto-client/ba2743acac6190bfab2566d252698feb/skoda_yellow_bulb_monitoring.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+#navbar{
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+} 
+#navbar::before{
+    content:"";
+    background-color: #f0a504;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Roboto Slab', sans-serif;
+    margin: 30px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 5px 25px;
+}
+#navbar ul li a{
+    background-color: #DD9800;
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#side-nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    background-color: #f0a504;
+    padding-top: 60px;
+    overflow-y: scroll;
+}
+#side-nav::-webkit-scrollbar{
+    display: none;
+}
+#side-nav{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.dropdown-btn{
+    width: 100%;
+}
+#side-nav a, .dropdown-btn{
+    font-family: 'Roboto Slab', sans-serif;
+    padding: 8px 8px 16px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background: none;
+    border: none;
+    transition: 0.3s;
+    display: block;
+    outline: none;
+}
+#side-nav a:hover, .dropdown-btn:hover{
+    color: black;
+}
+
+#side-nav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+}
+#side-nav a i{
+    padding-left: 15px;
+}
+.active{
+    background-color: white;
+    color: black;
+}
+.dropdown-container{
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 15px;
+    background-color: #ffc548;
+    font-size: 1.2rem;
+    color: white;
+}
+.fa,.fa-chevron-down{
+    float: right;
+    padding-right: 8px;
+}
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 540px;
+    height: 360px;
+    margin: 38px 30px;
+    border-radius: 25px;
+    background-color: #DD9800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+.information{
+    background-color: white;
+    margin: 10px auto; 
+    height: 90%;
+    width: 90%;
+    border-radius: 28px;
+    padding: 20px 20px;
+}
+.information ul{
+    display: flex;
+    flex-direction: column;
+}
+.information ul li{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 2px 2px;
+}
+#medical-problems{
+    background-color: #DD9800;
+    height: 150px;
+    padding: 5px 5px;
+    border-radius: 0px 28px 28px 28px;
+}
+#picture{
+    margin: 20px 30px;
+    background: #DD9800;
+    border-radius: 50%;
+    width: 460px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-image{
+    border-radius: 50%;
+    height: 97%;
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#picture img{
+    height: 100%;
+    border-radius: 50%;
+}
+.h-primary{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    border-radius: 15px;
+    padding: 7px 10px;
+}
+.btn{
+    background-color: #DD9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 2px 7px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: #DD9800;
+}
+.btn:hover{
+    color: black;
+}
+.center{
+    position: sticky;
+    text-align: center;
+    background-color: #DD9800;
+}
+#emergency{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 197px;
+    bottom: 0;
+    position: sticky;
+} 
+#emergency::before{
+    content:"";
+    background-color: #f0a504;
+    height: 105px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+#emergency ul{
+    display: flex;
+    font-family: 'Roboto Slab', sans-serif;
+    margin: 28px;
+    align-items: center;
+    justify-content: center;
+}
+#emergency ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 5px 25px;
+}
+#emergency ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#emergency #locate-police a{
+    background-color: #4285F4;
+}
+#emergency #call-police a{
+    background-color: #0000F6;
+}
+#emergency #call-ambulance a{
+    background-color: #FC0204;
+}
+#emergency #locate-police a:hover{
+    color: black;
+    background-color: white;
+}
+#emergency #call-police a:hover{
+    color: black;
+    background-color: white;
+}
+#emergency #call-ambulance a:hover{
+    color: black;
+    background-color: white;
+}
+#emergency #inform-emergecy{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+/* @media print{
+    html, body {
+       display: none;
+    }
+}
+html{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+} */

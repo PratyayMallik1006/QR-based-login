@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/Detail_Laptop.css">
+        <link rel="stylesheet" href="CSS/Registration_Laptop.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" media="screen and (max-width: 900px)" href="../CSS/Detail_Phone.css">
+        <link rel="stylesheet" media="screen and (max-width: 900px)" href="../CSS/Registration_Phone.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Edit User's Details</title>
+    </head>
+    <script src="JavaScript/Registration.js"></script>
+    <body>
+        <div id="side-nav">
+        <a class="closebtn" onclick="closeNav()">&times;</a>
+        <button class="dropdown-btn">About Us<i class="fa fa-chevron-down"></i></button>
+        <div class="dropdown-container">
+            <p>Team SUNCOR is composed of highly imaginative mechanical and computer science engineers, who have a passion not only for new technology and advancement but also for solving social problems in and out in the world.<br>The team spirit, skill set, knowledge and experience has been proven in previous events and competitions repeatedly.<br>SUNCOR corporation was developed in Vellore, Tamil Nadu in 2020. We also plan to come up with a variety of products and merchandise solely dedicated to provide the needs of our customers.</p>
+        </div>
+        <button class="dropdown-btn">Contact Us<i class="fa fa-chevron-down"></i></button>
+        <div class="dropdown-container">
+            <a href="tel:">Call Us</a>
+            <a href="mailto:suncorgroup2020@gmail.com" target="_blank">Email Us</a>
+            <a href="https://api.whatsapp.com/send?phone=" target="_blank">Whatsapp Us</a>
+        </div>
+        <button class="dropdown-btn">Privacy Policy<i class="fa fa-chevron-down"></i></button>
+        <div class="dropdown-container">
+            <p>The details submitted will be shown to anybody who scans the QR code.<br>Your contacts detail will be hidden on the website and only be visible if the person who scans the QR code wishes to contact you.<br>You will receive an email if a person tries to scan the QR code. The email may contain the name email and the location of the person if the person wishes to encloses his/her details.</p>
+        </div>
+    </div>
+    <header class="h-primary center">Edit User's Details</header>
+    <nav id="navbar">
+        <div>
+            <ul>
+                <li class="items"><a onclick="openNav()">&#9776;</a></li>
+                <li class="items"><a href="#medical">Medical</a></li>
+                <li class="items"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="details">
+        <div class="image">
+            <div id="picture">
+                <div class="user-image">
+                    <img src="https://library.kissclipart.com/20180906/wkw/kissclipart-user-icon-png-clipart-user-profile-computer-icons-94f08bfdb73bc68b.jpg" alt="User's Image">
+                </div>
+            </div>
+            <button id="upload-image" class="btn">Upload Picture</button>
+        </div>
+        <div class="box" id="medical">
+            <h1 class="h-primary">Medical</h1>
+            <div class="information">
+                <form action="medical-input">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Enter User's First name">
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Height:</label>
+                        <input type="number" step="0.1" name="height" id="height" placeholder="Enter User's height(in cm)">
+                    </div>
+                    <div class="form-group">
+                        <label for="weight">Weight:</label>
+                        <input type="number" step="0.1" name="weight" id="weight" placeholder="Enter User's weight(in kg)">
+                    </div>
+                    <div class="form-group">
+                        <label for="blood">Blood Type:</label>
+                        <input type="text" name="blood" id="blood" placeholder="Enter User's blood type">
+                    </div>
+                    <div class="form-group">
+                        <label for="medical-problems">Medical Conditions:</label><br>
+                        <textarea name="medical-problems" id="medical-problems" placeholder="Enter the User's medical condition (if any)"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="box" id="contact">
+            <h1 class="h-primary">Contact</h1>
+            <div class="information">
+                <form action="contact-input">
+                    <div class="form-group">
+                        <label for="guardian_a_phone">Guardian's Primary Number:</label>
+                        <input type="phone" name="phone" id="guardian_a_phone" placeholder="Enter Guardian's Primary Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="guardian_a_email">Guardian's Primary Email:</label>
+                        <input type="email" name="email" id="guardian_a_email" placeholder="Enter Guardian's Primary Email ID">
+                    </div>
+                    <div class="form-group">
+                        <label for="guardian_b_phone">Guardian's Secondary Number:</label>
+                        <input type="phone" name="phone" id="guardian_b_phone" placeholder="Enter Guardian's Secondary Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Guardian's Secondary Email:</label>
+                        <input type="phone" name="phone" id="guardian_b_email" placeholder="Enter Guardian's Secondary Email ID">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Relative's Primary Number:</label>
+                        <input type="phone" name="phone" id="relative_a_phone" placeholder="Enter Relative's Primary Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Relative's Secondary Number:</label>
+                        <input type="phone" name="phone" id="relative_b_phone" placeholder="Enter Relative's Secondary Number">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <a href="/login">login</a>
+    </section>
+    <footer id="emergency">
+        <button class="btn">Submit Details</button>
+    </footer>
+</body>
+<script src="JavaScript/Animation.js"></script>
+</html>

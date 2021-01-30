@@ -1,0 +1,40 @@
+.box{
+    height: 420px;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+}
+#upload-image{
+    width: 170px;
+    margin: 0px 172px;
+}
+.information{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+.information label{
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 600;
+}
+.information input, .information textarea{
+    font-family: 'Roboto', sans-serif;
+    width: 70%;
+    margin: 2px auto;
+    padding: 3px 1px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.information textarea{
+    padding: 5px;
+    margin: 2px;
+    resize: none;
+    width: 29rem;
+}
+.information textarea::placeholder{
+    padding: 5px;
+    color: white;
+    justify-content: stretch;
+    font-size: 1rem;
+}

@@ -1,0 +1,45 @@
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#navbar ul li{
+    font-size: 1.1rem;
+    margin: 2px 10px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#medical-problems{
+    height: 190px;
+}
+#picture{
+    width: 18rem;
+    height: 18rem;
+}
+.box{
+    width: 18rem;
+    height: 31rem;
+}
+.information{
+    padding: 9px 5px;
+}
+#emergency{
+    margin-top: 50px;
+}
+#emergency::before{
+    height: 205px;
+}
+#emergency ul{
+    display: flex;
+    font-family: 'Roboto Slab', sans-serif;
+    flex-direction: column;
+}
+#emergency ul li{
+    font-size: 1.1rem;
+    margin: 5px 10px;
+}

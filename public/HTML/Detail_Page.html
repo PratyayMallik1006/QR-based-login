@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/Detail_Laptop.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" media="screen and (max-width: 1200px)" href="CSS/Detail_Phone.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>User's Details</title>
+    </head>
+    <script src="../JavaScript/Detail.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <body>
+        <div id="side-nav">
+        <a class="closebtn" onclick="closeNav()">&times;</a>
+        <button class="dropdown-btn">About Us<i class="fa fa-chevron-down"></i></button>
+        <div class="dropdown-container">
+            <p>Team SUNCOR is composed of highly imaginative mechanical and computer science engineers, who have a passion not only for new technology and advancement but also for solving social problems in and out in the world.<br>The team spirit, skill set, knowledge and experience has been proven in previous events and competitions repeatedly.<br>SUNCOR corporation was developed in Vellore, Tamil Nadu in 2020. We also plan to come up with a variety of products and merchandise solely dedicated to provide the needs of our customers.</p>
+        </div>
+        <button class="dropdown-btn">Contact Us<i class="fa fa-chevron-down"></i></button>
+        <div class="dropdown-container">
+            <a href="tel:">Call Us</a>
+            <a href="mailto:suncorgroup2020@gmail.com" target="_blank">Email Us</a>
+            <a href="https://api.whatsapp.com/send?phone=" target="_blank">Whatsapp Us</a>
+        </div>
+        <button class="dropdown-btn">Privacy Policy<i class="fa fa-chevron-down"></i></button>
+        <div class="dropdown-container">
+            <p>Your name and email address will be shown to the Gaurdians to keep a track of who accessed the data.<br>You may wish to keep your identity anonymous by pressing cancel when asked.<br>This webapge accesses your location to send the Gaurdians of the User his/her last known location for the safety of the User.<br>Your location will accessed only once.</p>
+        </div>
+        <a href="#">Edit User's Details</a>
+    </div>
+    <header class="h-primary center">User's Details</header>
+    <nav id="navbar">
+        <div>
+            <ul>
+                <li class="items"><a onclick="openNav()">&#9776;</a></li>
+                <li class="items"><a id="medical-btn" href="#medical">Medical</a></li>
+                <li class="items"><a id="contact-btn" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="details">
+        <div id="picture">
+            <div class="user-image">
+                <img src="https://library.kissclipart.com/20180906/wkw/kissclipart-user-icon-png-clipart-user-profile-computer-icons-94f08bfdb73bc68b.jpg" alt="User's Image">
+            </div>
+        </div>
+        <div class="box" id="medical">
+            <h1 id="medical-card" class="h-primary">Medical</h1>
+            <div class="information">
+                <ul>
+                    <li class="medical-list">Name:<span> <%= name %> </span></li>
+                    <li class="medical-list">Height:<span><%= height %></span></li>
+                    <li class="medical-list">Weight:<span><%= weight %></span></li>
+                    <li class="medical-list">Blood Type:<span><%= blood %></span></li>
+                    <li id="medical-problems" class="medical-list">Medical Conditions:</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box" id="contact">
+            <h1 id="contact-card" class="h-primary">Contact</h1>
+            <div class="information">
+                <ul>
+                    <li class="contact-list">Guardian's Primary Number:&nbsp;&nbsp;<a href="tel:" class="btn">Call Now</a></li>
+                    <li class="contact-list">Guardian's Primary Email:&nbsp;&nbsp;<a href="mailto:" target="_blank" class="btn">Email Now</a></li>
+                    <li class="contact-list">Guardian's Primary Whatsapp:&nbsp;&nbsp;<a href="https://api.whatsapp.com/send?phone=" target="_blank" class="btn">Whatsapp Now</a></li>
+                    <li class="contact-list">Guardian's Secondary Number:&nbsp;&nbsp;<a href="tel:" class="btn">Call Now</a></li>
+                    <li class="contact-list">Guardian's Secondary Email:&nbsp;&nbsp;<a href="mailto:" target="_blank" class="btn">Email Now</a></li>
+                    <li class="contact-list">Guardian's Secondary Whatsapp:&nbsp;&nbsp;<a href="https://api.whatsapp.com/send?phone=" target="_blank" class="btn">Whatsapp Now</a></li>
+                    <li class="contact-list">Relative's Primary Number:&nbsp;&nbsp;<a href="tel:" class="btn">Call Now</a></li>
+                    <li class="contact-list">Relative's Secondary Number:&nbsp;&nbsp;<a href="tel:" class="btn"">Call Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer id="emergency">
+        <ul>
+            <li id="inform-emergency">In Case of Emergency:</li>
+            <li id="locate-police"><a href="http://maps.google.com/?q=Police Station" target="_blank">Locate Police Station</a></li>
+            <li id="call-police"><a href="tel:100">Contact Police</a></li>
+            <li id="call-ambulance"><a href="tel:102">Contact Ambulance</a></li>
+        </ul>
+    </footer>
+</body>
+<script src="JavaScript/Animation.js"></script>
+</html>
